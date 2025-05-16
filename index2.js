@@ -34,4 +34,13 @@ app.get('/api/produtos',(req,res)=>{
     ])
 });
 
+app.get('/inpecionar',(req,res)=>{
+    console.log("nova requisição recebida");
+    console.log("metodo: ",req.method);
+    console.log("URL: ",req.url);
+    console.log("Cabeçalho: ", req.headers);
+
+    res.send('requisição recebida veja o terminal!');
+});
+
 app.listen(porta);
